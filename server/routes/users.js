@@ -4,29 +4,6 @@ const bcrypt = require("bcrypt");
 
 //update user
 
-// router.put("/:id", async (req, res) => {
-//   const { id } = req.params;
-//   let { userId, password } = req.body;
-
-//   if (userId === id) {
-//     try {
-//       if (password) {
-//         hashedPassword = await bcrypt.hash(password, 10);
-//         password = hashedPassword;
-//       }
-
-//       const updateduser = await User.findByIdAndUpdate(userId, {
-//         $set: req.body,
-//       });
-//       res.status(200).json(updateduser);
-//     } catch (error) {
-//       res.status(500).json(error);
-//     }
-//   } else {
-//     res.status(401).json({ message: "Unauthorized" });
-//   }
-// });
-
 router.put("/:id", async (req, res) => {
   if (req.body.userId === req.params.id) {
     if (req.body.password) {
