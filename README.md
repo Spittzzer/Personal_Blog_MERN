@@ -1,0 +1,3 @@
+# Personal_Blog_MERN
+Creating a Personal Blog to document and share things i've learned during my journey as a web developer
+Work in progress...
